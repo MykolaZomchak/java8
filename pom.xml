@@ -10,14 +10,12 @@
 
     <build>
         <plugins>
-            <!-- target Java 9 -->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <!-- fork compilation and use the
-                             specified executable -->
-                    <fork>true</fork>
-                    <executable>javac9</executable>
+                    <source>9</source>
+                    <target>9</target>
                 </configuration>
             </plugin>
         </plugins>
