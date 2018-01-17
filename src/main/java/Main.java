@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
@@ -11,7 +10,7 @@ public class Main {
     private static List<Film> films;
 
 
-    private static final String QUERIES =   "\n1 - Is there any film by Year\n" +                           //anymatch
+    private static final String QUERIES = "\n1 - Is there any film by Year\n" +                           //anymatch
                                             "2 - Show n films by Year\n" +                                  //limit
                                             "3 - Show n films by Year sorted by name\n" +                   //sorted
                                             "4 - Show all runtimes\n" +                                     //distinct
@@ -90,9 +89,6 @@ public class Main {
         if(optionalFilm.isPresent())
         optionalFilm.ifPresent(System.out::println);
     }
-
-
-
 
 
 
